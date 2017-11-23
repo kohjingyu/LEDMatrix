@@ -1,0 +1,117 @@
+module ledMatrix(
+    input clk,  // clock
+    input rst,  // reset
+    input digit,
+    output ledx[8],
+    output ledy[8]
+  ) {
+  
+  .clk(clk) {
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    .rst(rst){
+    }
+  }
+
+    dff matrix_counter[5](.clk(clk), .rst(rst));
+  
+  always {
+      ledx = 8b00000000;
+      ledy = 8b00000000;
+    
+      case(digit) {
+        1d0:
+          case(matrix_counter.q) {
+            5d0:
+               ledx = 8b10010100;
+               ledy = 8b11010110;
+            5d1:
+               ledx = 8b10000100;
+               ledy = 8b11010111;
+            5d2:
+               ledx = 8b10010100;
+               ledy = 8b01010111;
+            5d3:
+               ledx = 8b10010100;
+               ledy = 8b10011011;
+            5d4:
+               ledx = 8b10010000;
+               ledy = 8b11011011;
+            5d5:
+               ledx = 8b11010100;
+               ledy = 8b01010011;
+            5d6:
+               ledx = 8b10000100;
+               ledy = 8b11110011;
+            5d7:
+               ledx = 8b10110100;
+               ledy = 8b11010010;
+            5d8:
+               ledx = 8b10010110;
+               ledy = 8b10010011;
+            5d9:
+               ledx = 8b10010110;
+               ledy = 8b11010010;
+            5d10:
+               ledx = 8b10000110;
+               ledy = 8b11010011;
+            5d11:
+               ledx = 8b10010110;
+               ledy = 8b01010011;
+            5d12:
+               ledx = 8b10010010;
+               ledy = 8b11010011;
+            }
+        1d1:
+          case(matrix_counter.q) {
+          5d0:
+             ledx = 8b10010100;
+             ledy = 8b11010110;
+          5d1:
+             ledx = 8b10000100;
+             ledy = 8b11010111;
+          5d2:
+             ledx = 8b10010100;
+             ledy = 8b01010111;
+          5d3:
+             ledx = 8b10010100;
+             ledy = 8b10011011;
+          5d4:
+             ledx = 8b10010000;
+             ledy = 8b11011011;
+          5d5:
+             ledx = 8b11010100;
+             ledy = 8b01010011;
+          5d6:
+             ledx = 8b10010100;
+             ledy = 8b11110010;
+          5d7:
+             ledx = 8b10000100;
+             ledy = 8b11110011;
+          5d8:
+             ledx = 8b10010100;
+             ledy = 8b01110011;
+          5d9:
+             ledx = 8b10110100;
+             ledy = 8b01010011;
+          5d10:
+             ledx = 8b10010110;
+             ledy = 8b10010011;
+          5d11:
+             ledx = 8b10010010;
+             ledy = 8b11010011;
+          5d12:
+             ledx = 8b10010101;
+             ledy = 8b11010010;
+          5d13:
+             ledx = 8b10000101;
+             ledy = 8b11010011;
+          5d14:
+             ledx = 8b10010101;
+             ledy = 8b01010011;
+          }
+      }
+      
+      matrix_counter.d = matrix_counter.q + 1;
+     }
+  }

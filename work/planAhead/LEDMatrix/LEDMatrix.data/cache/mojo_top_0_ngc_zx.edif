@@ -1,0 +1,1184 @@
+(edif mojo_top_0
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2017 11 22 19 2 12)
+      (program "Xilinx ngc2edif" (version "P.20131013"))
+      (author "Xilinx. Inc ")
+      (comment "This EDIF netlist is to be used within supported synthesis tools")
+      (comment "for determining resource/timing estimates of the design component")
+      (comment "represented by this netlist.")
+      (comment "Command line: -mdp2sp -w -secure mojo_top_0.ngc mojo_top_0.edif ")))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell VCC
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port P
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell GND
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port G
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell IBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OBUFT
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port T
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell BUFGP
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell INV
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell FDS
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port C
+              (direction INPUT)
+            )
+            (port D
+              (direction INPUT)
+            )
+            (port S
+              (direction INPUT)
+            )
+            (port Q
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell FDR
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port C
+              (direction INPUT)
+            )
+            (port D
+              (direction INPUT)
+            )
+            (port R
+              (direction INPUT)
+            )
+            (port Q
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell LUT5
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port I2
+              (direction INPUT)
+            )
+            (port I3
+              (direction INPUT)
+            )
+            (port I4
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell LUT4
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port I2
+              (direction INPUT)
+            )
+            (port I3
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell LUT3
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port I2
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell LUT2
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+  )
+
+  (library mojo_top_0_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell (rename ledMatrix_1_ledM "ledMatrix_1")
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port clk
+              (direction INPUT)
+            )
+            (port rst
+              (direction INPUT)
+            )
+            (port (rename ledx_2__ "ledx<2>")
+              (direction OUTPUT)
+            )
+            (port (rename ledx_5__ "ledx<5>")
+              (direction OUTPUT)
+            )
+            (port (rename ledx_6__ "ledx<6>")
+              (direction OUTPUT)
+            )
+            (port (rename ledy_5__ "ledy<5>")
+              (direction OUTPUT)
+            )
+            (port (rename ledx_7__ "ledx<7>")
+              (direction OUTPUT)
+            )
+            (port (rename ledx_1__ "ledx<1>")
+              (direction OUTPUT)
+            )
+            (port (rename ledy_2__ "ledy<2>")
+              (direction OUTPUT)
+            )
+            (port (rename ledy_0__ "ledy<0>")
+              (direction OUTPUT)
+            )
+            (port (rename ledy_3__ "ledy<3>")
+              (direction OUTPUT)
+            )
+            (port (rename ledx_4__ "ledx<4>")
+              (direction OUTPUT)
+            )
+            (port (rename ledy_7__ "ledy<7>")
+              (direction OUTPUT)
+            )
+            (port (rename ledy_6__ "ledy<6>")
+              (direction OUTPUT)
+            )
+          )
+          (contents
+            (instance M_matrix_counter_q_4
+              (viewRef view_1 (cellRef FDR (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance M_matrix_counter_q_3
+              (viewRef view_1 (cellRef FDR (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance M_matrix_counter_q_2
+              (viewRef view_1 (cellRef FDR (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance M_matrix_counter_q_1
+              (viewRef view_1 (cellRef FDR (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance M_matrix_counter_q_0
+              (viewRef view_1 (cellRef FDR (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance (rename Mcount_M_matrix_counter_q_xor_4_11 "Mcount_M_matrix_counter_q_xor<4>11")
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "6AAAAAAA") (owner "Xilinx"))
+            )
+            (instance (rename Mcount_M_matrix_counter_q_xor_3_11 "Mcount_M_matrix_counter_q_xor<3>11")
+              (viewRef view_1 (cellRef LUT4 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "6AAA") (owner "Xilinx"))
+            )
+            (instance (rename M_matrix_counter_q_4__INV_5_o1 "M_matrix_counter_q[4]_INV_5_o1")
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___1___ledM/M_matrix_counter_q[4]_INV_5_o1") (owner "Xilinx"))
+              (property INIT (string "11105555") (owner "Xilinx"))
+            )
+            (instance (rename M_matrix_counter_q_4__GND_2_o_equal_32_o_4_1 "M_matrix_counter_q[4]_GND_2_o_equal_32_o<4>1")
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___0___ledM/M_matrix_counter_q[4]_GND_2_o_equal_32_o<4>1") (owner "Xilinx"))
+              (property INIT (string "00000080") (owner "Xilinx"))
+            )
+            (instance (rename M_matrix_counter_q_4__GND_2_o_equal_30_o_4_1 "M_matrix_counter_q[4]_GND_2_o_equal_30_o<4>1")
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___0___ledM/M_matrix_counter_q[4]_GND_2_o_equal_32_o<4>1") (owner "Xilinx"))
+              (property INIT (string "00000040") (owner "Xilinx"))
+            )
+            (instance Mmux_ledy61
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___4___ledM/Mmux_ledy61") (owner "Xilinx"))
+              (property INIT (string "00000040") (owner "Xilinx"))
+            )
+            (instance (rename ledy_4_1 "ledy<4>1")
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___5___ledM/ledy<4>1") (owner "Xilinx"))
+              (property INIT (string "11155555") (owner "Xilinx"))
+            )
+            (instance out11
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___5___ledM/ledy<4>1") (owner "Xilinx"))
+              (property INIT (string "00022222") (owner "Xilinx"))
+            )
+            (instance Mmux_ledy31
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___4___ledM/Mmux_ledy61") (owner "Xilinx"))
+              (property INIT (string "00010101") (owner "Xilinx"))
+            )
+            (instance (rename Mcount_M_matrix_counter_q_xor_2_11 "Mcount_M_matrix_counter_q_xor<2>11")
+              (viewRef view_1 (cellRef LUT3 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "6A") (owner "Xilinx"))
+            )
+            (instance Mmux_ledy11
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___3___ledM/Mmux_ledy11") (owner "Xilinx"))
+              (property INIT (string "05151154") (owner "Xilinx"))
+            )
+            (instance Mmux_ledy41
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___3___ledM/Mmux_ledy11") (owner "Xilinx"))
+              (property INIT (string "00011000") (owner "Xilinx"))
+            )
+            (instance (rename M_matrix_counter_q_4__INV_4_o1 "M_matrix_counter_q[4]_INV_4_o1")
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___1___ledM/M_matrix_counter_q[4]_INV_5_o1") (owner "Xilinx"))
+              (property INIT (string "04451551") (owner "Xilinx"))
+            )
+            (instance Mmux_ledy81
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___2___ledM/Mmux_ledy81") (owner "Xilinx"))
+              (property INIT (string "01155145") (owner "Xilinx"))
+            )
+            (instance Mmux_ledy71
+              (viewRef view_1 (cellRef LUT5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___2___ledM/Mmux_ledy81") (owner "Xilinx"))
+              (property INIT (string "11154551") (owner "Xilinx"))
+            )
+            (instance (rename Mcount_M_matrix_counter_q_xor_1_11 "Mcount_M_matrix_counter_q_xor<1>11")
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "6") (owner "Xilinx"))
+            )
+            (instance (rename Mcount_M_matrix_counter_q_xor_0_11_INV_0 "Mcount_M_matrix_counter_q_xor<0>11_INV_0")
+              (viewRef view_1 (cellRef INV (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (net clk
+              (joined
+                (portRef clk)
+                (portRef C (instanceRef M_matrix_counter_q_0))
+                (portRef C (instanceRef M_matrix_counter_q_1))
+                (portRef C (instanceRef M_matrix_counter_q_2))
+                (portRef C (instanceRef M_matrix_counter_q_3))
+                (portRef C (instanceRef M_matrix_counter_q_4))
+              )
+            )
+            (net (rename Result_4__ "Result<4>")
+              (joined
+                (portRef D (instanceRef M_matrix_counter_q_4))
+                (portRef O (instanceRef Mcount_M_matrix_counter_q_xor_4_11))
+              )
+            )
+            (net rst
+              (joined
+                (portRef rst)
+                (portRef R (instanceRef M_matrix_counter_q_0))
+                (portRef R (instanceRef M_matrix_counter_q_1))
+                (portRef R (instanceRef M_matrix_counter_q_2))
+                (portRef R (instanceRef M_matrix_counter_q_3))
+                (portRef R (instanceRef M_matrix_counter_q_4))
+              )
+            )
+            (net (rename M_matrix_counter_q_4__ "M_matrix_counter_q<4>")
+              (joined
+                (portRef I0 (instanceRef Mcount_M_matrix_counter_q_xor_4_11))
+                (portRef I0 (instanceRef M_matrix_counter_q_4__INV_5_o1))
+                (portRef I3 (instanceRef M_matrix_counter_q_4__GND_2_o_equal_32_o_4_1))
+                (portRef I3 (instanceRef M_matrix_counter_q_4__GND_2_o_equal_30_o_4_1))
+                (portRef I3 (instanceRef Mmux_ledy61))
+                (portRef I0 (instanceRef ledy_4_1))
+                (portRef I1 (instanceRef out11))
+                (portRef I2 (instanceRef Mmux_ledy31))
+                (portRef I0 (instanceRef Mmux_ledy11))
+                (portRef I1 (instanceRef Mmux_ledy41))
+                (portRef I0 (instanceRef M_matrix_counter_q_4__INV_4_o1))
+                (portRef I0 (instanceRef Mmux_ledy81))
+                (portRef I0 (instanceRef Mmux_ledy71))
+                (portRef Q (instanceRef M_matrix_counter_q_4))
+              )
+            )
+            (net (rename Result_3__ "Result<3>")
+              (joined
+                (portRef D (instanceRef M_matrix_counter_q_3))
+                (portRef O (instanceRef Mcount_M_matrix_counter_q_xor_3_11))
+              )
+            )
+            (net (rename M_matrix_counter_q_3__ "M_matrix_counter_q<3>")
+              (joined
+                (portRef I4 (instanceRef Mcount_M_matrix_counter_q_xor_4_11))
+                (portRef I0 (instanceRef Mcount_M_matrix_counter_q_xor_3_11))
+                (portRef I1 (instanceRef M_matrix_counter_q_4__INV_5_o1))
+                (portRef I4 (instanceRef M_matrix_counter_q_4__GND_2_o_equal_32_o_4_1))
+                (portRef I4 (instanceRef M_matrix_counter_q_4__GND_2_o_equal_30_o_4_1))
+                (portRef I4 (instanceRef Mmux_ledy61))
+                (portRef I4 (instanceRef ledy_4_1))
+                (portRef I0 (instanceRef out11))
+                (portRef I1 (instanceRef Mmux_ledy31))
+                (portRef I3 (instanceRef Mmux_ledy11))
+                (portRef I0 (instanceRef Mmux_ledy41))
+                (portRef I2 (instanceRef M_matrix_counter_q_4__INV_4_o1))
+                (portRef I4 (instanceRef Mmux_ledy81))
+                (portRef I1 (instanceRef Mmux_ledy71))
+                (portRef Q (instanceRef M_matrix_counter_q_3))
+              )
+            )
+            (net (rename Result_2__ "Result<2>")
+              (joined
+                (portRef D (instanceRef M_matrix_counter_q_2))
+                (portRef O (instanceRef Mcount_M_matrix_counter_q_xor_2_11))
+              )
+            )
+            (net (rename M_matrix_counter_q_2__ "M_matrix_counter_q<2>")
+              (joined
+                (portRef I3 (instanceRef Mcount_M_matrix_counter_q_xor_4_11))
+                (portRef I3 (instanceRef Mcount_M_matrix_counter_q_xor_3_11))
+                (portRef I4 (instanceRef M_matrix_counter_q_4__INV_5_o1))
+                (portRef I1 (instanceRef M_matrix_counter_q_4__GND_2_o_equal_32_o_4_1))
+                (portRef I1 (instanceRef M_matrix_counter_q_4__GND_2_o_equal_30_o_4_1))
+                (portRef I1 (instanceRef Mmux_ledy61))
+                (portRef I1 (instanceRef ledy_4_1))
+                (portRef I4 (instanceRef out11))
+                (portRef I0 (instanceRef Mmux_ledy31))
+                (portRef I0 (instanceRef Mcount_M_matrix_counter_q_xor_2_11))
+                (portRef I2 (instanceRef Mmux_ledy11))
+                (portRef I4 (instanceRef Mmux_ledy41))
+                (portRef I3 (instanceRef M_matrix_counter_q_4__INV_4_o1))
+                (portRef I3 (instanceRef Mmux_ledy81))
+                (portRef I4 (instanceRef Mmux_ledy71))
+                (portRef Q (instanceRef M_matrix_counter_q_2))
+              )
+            )
+            (net (rename Result_1__ "Result<1>")
+              (joined
+                (portRef D (instanceRef M_matrix_counter_q_1))
+                (portRef O (instanceRef Mcount_M_matrix_counter_q_xor_1_11))
+              )
+            )
+            (net (rename M_matrix_counter_q_1__ "M_matrix_counter_q<1>")
+              (joined
+                (portRef I2 (instanceRef Mcount_M_matrix_counter_q_xor_4_11))
+                (portRef I2 (instanceRef Mcount_M_matrix_counter_q_xor_3_11))
+                (portRef I2 (instanceRef M_matrix_counter_q_4__INV_5_o1))
+                (portRef I0 (instanceRef M_matrix_counter_q_4__GND_2_o_equal_32_o_4_1))
+                (portRef I0 (instanceRef M_matrix_counter_q_4__GND_2_o_equal_30_o_4_1))
+                (portRef I2 (instanceRef Mmux_ledy61))
+                (portRef I2 (instanceRef ledy_4_1))
+                (portRef I2 (instanceRef out11))
+                (portRef I4 (instanceRef Mmux_ledy31))
+                (portRef I2 (instanceRef Mcount_M_matrix_counter_q_xor_2_11))
+                (portRef I4 (instanceRef Mmux_ledy11))
+                (portRef I3 (instanceRef Mmux_ledy41))
+                (portRef I4 (instanceRef M_matrix_counter_q_4__INV_4_o1))
+                (portRef I2 (instanceRef Mmux_ledy81))
+                (portRef I2 (instanceRef Mmux_ledy71))
+                (portRef I0 (instanceRef Mcount_M_matrix_counter_q_xor_1_11))
+                (portRef Q (instanceRef M_matrix_counter_q_1))
+              )
+            )
+            (net (rename Result_0__ "Result<0>")
+              (joined
+                (portRef D (instanceRef M_matrix_counter_q_0))
+                (portRef O (instanceRef Mcount_M_matrix_counter_q_xor_0_11_INV_0))
+              )
+            )
+            (net (rename M_matrix_counter_q_0__ "M_matrix_counter_q<0>")
+              (joined
+                (portRef I1 (instanceRef Mcount_M_matrix_counter_q_xor_4_11))
+                (portRef I1 (instanceRef Mcount_M_matrix_counter_q_xor_3_11))
+                (portRef I3 (instanceRef M_matrix_counter_q_4__INV_5_o1))
+                (portRef I2 (instanceRef M_matrix_counter_q_4__GND_2_o_equal_32_o_4_1))
+                (portRef I2 (instanceRef M_matrix_counter_q_4__GND_2_o_equal_30_o_4_1))
+                (portRef I0 (instanceRef Mmux_ledy61))
+                (portRef I3 (instanceRef ledy_4_1))
+                (portRef I3 (instanceRef out11))
+                (portRef I3 (instanceRef Mmux_ledy31))
+                (portRef I1 (instanceRef Mcount_M_matrix_counter_q_xor_2_11))
+                (portRef I1 (instanceRef Mmux_ledy11))
+                (portRef I2 (instanceRef Mmux_ledy41))
+                (portRef I1 (instanceRef M_matrix_counter_q_4__INV_4_o1))
+                (portRef I1 (instanceRef Mmux_ledy81))
+                (portRef I3 (instanceRef Mmux_ledy71))
+                (portRef I1 (instanceRef Mcount_M_matrix_counter_q_xor_1_11))
+                (portRef I (instanceRef Mcount_M_matrix_counter_q_xor_0_11_INV_0))
+                (portRef Q (instanceRef M_matrix_counter_q_0))
+              )
+            )
+            (net (rename ledx_2__ "ledx<2>")
+              (joined
+                (portRef ledx_2__)
+                (portRef O (instanceRef M_matrix_counter_q_4__INV_5_o1))
+              )
+            )
+            (net (rename ledx_5__ "ledx<5>")
+              (joined
+                (portRef ledx_5__)
+                (portRef O (instanceRef M_matrix_counter_q_4__GND_2_o_equal_32_o_4_1))
+              )
+            )
+            (net (rename ledx_6__ "ledx<6>")
+              (joined
+                (portRef ledx_6__)
+                (portRef O (instanceRef M_matrix_counter_q_4__GND_2_o_equal_30_o_4_1))
+              )
+            )
+            (net (rename ledy_5__ "ledy<5>")
+              (joined
+                (portRef ledy_5__)
+                (portRef O (instanceRef Mmux_ledy61))
+              )
+            )
+            (net (rename ledx_7__ "ledx<7>")
+              (joined
+                (portRef ledx_7__)
+                (portRef O (instanceRef ledy_4_1))
+              )
+            )
+            (net (rename ledx_1__ "ledx<1>")
+              (joined
+                (portRef ledx_1__)
+                (portRef O (instanceRef out11))
+              )
+            )
+            (net (rename ledy_2__ "ledy<2>")
+              (joined
+                (portRef ledy_2__)
+                (portRef O (instanceRef Mmux_ledy31))
+              )
+            )
+            (net (rename ledy_0__ "ledy<0>")
+              (joined
+                (portRef ledy_0__)
+                (portRef O (instanceRef Mmux_ledy11))
+              )
+            )
+            (net (rename ledy_3__ "ledy<3>")
+              (joined
+                (portRef ledy_3__)
+                (portRef O (instanceRef Mmux_ledy41))
+              )
+            )
+            (net (rename ledx_4__ "ledx<4>")
+              (joined
+                (portRef ledx_4__)
+                (portRef O (instanceRef M_matrix_counter_q_4__INV_4_o1))
+              )
+            )
+            (net (rename ledy_7__ "ledy<7>")
+              (joined
+                (portRef ledy_7__)
+                (portRef O (instanceRef Mmux_ledy81))
+              )
+            )
+            (net (rename ledy_6__ "ledy<6>")
+              (joined
+                (portRef ledy_6__)
+                (portRef O (instanceRef Mmux_ledy71))
+              )
+            )
+          )
+      )
+    )
+    (cell (rename reset_conditioner_2_reset_cond "reset_conditioner_2")
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port clk
+              (direction INPUT)
+            )
+            (port in
+              (direction INPUT)
+            )
+            (port out
+              (direction OUTPUT)
+            )
+          )
+          (contents
+            (instance M_stage_q_3
+              (viewRef view_1 (cellRef FDS (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "1") (owner "Xilinx"))
+            )
+            (instance M_stage_q_2
+              (viewRef view_1 (cellRef FDS (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "1") (owner "Xilinx"))
+            )
+            (instance M_stage_q_1
+              (viewRef view_1 (cellRef FDS (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "1") (owner "Xilinx"))
+            )
+            (instance M_stage_q_0
+              (viewRef view_1 (cellRef FDS (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "1") (owner "Xilinx"))
+            )
+            (instance XST_GND
+              (viewRef view_1 (cellRef GND (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (net clk
+              (joined
+                (portRef clk)
+                (portRef C (instanceRef M_stage_q_0))
+                (portRef C (instanceRef M_stage_q_1))
+                (portRef C (instanceRef M_stage_q_2))
+                (portRef C (instanceRef M_stage_q_3))
+              )
+            )
+            (net (rename M_stage_q_2__ "M_stage_q<2>")
+              (joined
+                (portRef D (instanceRef M_stage_q_3))
+                (portRef Q (instanceRef M_stage_q_2))
+              )
+            )
+            (net in
+              (joined
+                (portRef in)
+                (portRef S (instanceRef M_stage_q_0))
+                (portRef S (instanceRef M_stage_q_1))
+                (portRef S (instanceRef M_stage_q_2))
+                (portRef S (instanceRef M_stage_q_3))
+              )
+            )
+            (net (rename M_stage_q_3__ "M_stage_q<3>")
+              (joined
+                (portRef out)
+                (portRef Q (instanceRef M_stage_q_3))
+              )
+            )
+            (net (rename M_stage_q_1__ "M_stage_q<1>")
+              (joined
+                (portRef D (instanceRef M_stage_q_2))
+                (portRef Q (instanceRef M_stage_q_1))
+              )
+            )
+            (net (rename M_stage_q_0__ "M_stage_q<0>")
+              (joined
+                (portRef D (instanceRef M_stage_q_1))
+                (portRef Q (instanceRef M_stage_q_0))
+              )
+            )
+            (net spi_channel_3_OBUFT
+              (joined
+                (portRef G (instanceRef XST_GND))
+                (portRef D (instanceRef M_stage_q_0))
+              )
+            )
+          )
+      )
+    )
+    (cell mojo_top_0
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port clk
+              (direction INPUT)
+            )
+            (port rst_n
+              (direction INPUT)
+            )
+            (port cclk
+              (direction INPUT)
+            )
+            (port spi_ss
+              (direction INPUT)
+            )
+            (port spi_mosi
+              (direction INPUT)
+            )
+            (port spi_sck
+              (direction INPUT)
+            )
+            (port avr_tx
+              (direction INPUT)
+            )
+            (port avr_rx_busy
+              (direction INPUT)
+            )
+            (port spi_miso
+              (direction OUTPUT)
+            )
+            (port avr_rx
+              (direction OUTPUT)
+            )
+            (port (array (rename io_dip "io_dip<23:0>") 24)
+              (direction INPUT))
+            (port (array (rename spi_channel "spi_channel<3:0>") 4)
+              (direction OUTPUT))
+            (port (array (rename ledx "ledx<7:0>") 8)
+              (direction OUTPUT))
+            (port (array (rename ledy "ledy<7:0>") 8)
+              (direction OUTPUT))
+            (designator "xc6slx9tqg144-2")
+            (property TYPE (string "mojo_top_0") (owner "Xilinx"))
+            (property BUS_INFO (string "24:INPUT:io_dip<23:0>") (owner "Xilinx"))
+            (property BUS_INFO (string "4:OUTPUT:spi_channel<3:0>") (owner "Xilinx"))
+            (property BUS_INFO (string "8:OUTPUT:ledx<7:0>") (owner "Xilinx"))
+            (property BUS_INFO (string "8:OUTPUT:ledy<7:0>") (owner "Xilinx"))
+            (property SHREG_MIN_SIZE (string "-1") (owner "Xilinx"))
+            (property SHREG_EXTRACT_NGC (string "Yes") (owner "Xilinx"))
+            (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_TAG (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_ALIAS (string "mojo_top_0_mojo_top_0") (owner "Xilinx"))
+          )
+          (contents
+            (instance XST_VCC
+              (viewRef view_1 (cellRef VCC (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance XST_GND
+              (viewRef view_1 (cellRef GND (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename rst_n_IBUF_renamed_0 "rst_n_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename spi_channel_3_OBUFT_renamed_1 "spi_channel_3_OBUFT")
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance spi_channel_2_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance spi_channel_1_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance spi_channel_0_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledx_7_OBUF_renamed_2 "ledx_7_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledx_6_OBUF_renamed_3 "ledx_6_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledx_5_OBUF_renamed_4 "ledx_5_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledx_4_OBUF_renamed_5 "ledx_4_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ledx_3_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledx_2_OBUF_renamed_6 "ledx_2_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledx_1_OBUF_renamed_7 "ledx_1_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ledx_0_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledy_7_OBUF_renamed_8 "ledy_7_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledy_6_OBUF_renamed_9 "ledy_6_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledy_5_OBUF_renamed_10 "ledy_5_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ledy_4_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledy_3_OBUF_renamed_11 "ledy_3_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledy_2_OBUF_renamed_12 "ledy_2_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ledy_1_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ledy_0_OBUF_renamed_13 "ledy_0_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance spi_miso_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance avr_rx_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename clk_BUFGP_renamed_14 "clk_BUFGP")
+              (viewRef view_1 (cellRef BUFGP (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance M_reset_cond_in1_INV_0
+              (viewRef view_1 (cellRef INV (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance reset_cond
+              (viewRef view_1 (cellRef reset_conditioner_2_reset_cond (libraryRef mojo_top_0_lib)))
+              (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+              (property NLW_MACRO_TAG (integer 1) (owner "Xilinx"))
+              (property NLW_MACRO_ALIAS (string "reset_conditioner_2_reset_cond") (owner "Xilinx"))
+            )
+            (instance ledM
+              (viewRef view_1 (cellRef ledMatrix_1_ledM (libraryRef mojo_top_0_lib)))
+              (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+              (property NLW_MACRO_TAG (integer 2) (owner "Xilinx"))
+              (property NLW_MACRO_ALIAS (string "ledMatrix_1_ledM") (owner "Xilinx"))
+            )
+            (net clk_BUFGP
+              (joined
+                (portRef O (instanceRef clk_BUFGP_renamed_14))
+                (portRef clk (instanceRef reset_cond))
+                (portRef clk (instanceRef ledM))
+              )
+            )
+            (net rst_n_IBUF
+              (joined
+                (portRef O (instanceRef rst_n_IBUF_renamed_0))
+                (portRef I (instanceRef M_reset_cond_in1_INV_0))
+              )
+            )
+            (net M_reset_cond_out
+              (joined
+                (portRef out (instanceRef reset_cond))
+                (portRef rst (instanceRef ledM))
+              )
+            )
+            (net ledx_7_OBUF
+              (joined
+                (portRef I (instanceRef ledx_7_OBUF_renamed_2))
+                (portRef I (instanceRef ledy_4_OBUF))
+                (portRef I (instanceRef ledy_1_OBUF))
+                (portRef ledx_7__ (instanceRef ledM))
+              )
+            )
+            (net ledx_6_OBUF
+              (joined
+                (portRef I (instanceRef ledx_6_OBUF_renamed_3))
+                (portRef ledx_6__ (instanceRef ledM))
+              )
+            )
+            (net ledx_5_OBUF
+              (joined
+                (portRef I (instanceRef ledx_5_OBUF_renamed_4))
+                (portRef ledx_5__ (instanceRef ledM))
+              )
+            )
+            (net ledx_4_OBUF
+              (joined
+                (portRef I (instanceRef ledx_4_OBUF_renamed_5))
+                (portRef ledx_4__ (instanceRef ledM))
+              )
+            )
+            (net ledx_2_OBUF
+              (joined
+                (portRef I (instanceRef ledx_2_OBUF_renamed_6))
+                (portRef ledx_2__ (instanceRef ledM))
+              )
+            )
+            (net ledx_1_OBUF
+              (joined
+                (portRef I (instanceRef ledx_1_OBUF_renamed_7))
+                (portRef ledx_1__ (instanceRef ledM))
+              )
+            )
+            (net ledy_7_OBUF
+              (joined
+                (portRef I (instanceRef ledy_7_OBUF_renamed_8))
+                (portRef ledy_7__ (instanceRef ledM))
+              )
+            )
+            (net ledy_6_OBUF
+              (joined
+                (portRef I (instanceRef ledy_6_OBUF_renamed_9))
+                (portRef ledy_6__ (instanceRef ledM))
+              )
+            )
+            (net ledy_5_OBUF
+              (joined
+                (portRef I (instanceRef ledy_5_OBUF_renamed_10))
+                (portRef ledy_5__ (instanceRef ledM))
+              )
+            )
+            (net ledy_3_OBUF
+              (joined
+                (portRef I (instanceRef ledy_3_OBUF_renamed_11))
+                (portRef ledy_3__ (instanceRef ledM))
+              )
+            )
+            (net ledy_2_OBUF
+              (joined
+                (portRef I (instanceRef ledy_2_OBUF_renamed_12))
+                (portRef ledy_2__ (instanceRef ledM))
+              )
+            )
+            (net ledy_0_OBUF
+              (joined
+                (portRef I (instanceRef ledy_0_OBUF_renamed_13))
+                (portRef ledy_0__ (instanceRef ledM))
+              )
+            )
+            (net M_reset_cond_in
+              (joined
+                (portRef O (instanceRef M_reset_cond_in1_INV_0))
+                (portRef in (instanceRef reset_cond))
+              )
+            )
+            (net spi_channel_3_OBUFT
+              (joined
+                (portRef G (instanceRef XST_GND))
+                (portRef I (instanceRef spi_channel_3_OBUFT_renamed_1))
+                (portRef I (instanceRef spi_channel_2_OBUFT))
+                (portRef I (instanceRef spi_channel_1_OBUFT))
+                (portRef I (instanceRef spi_channel_0_OBUFT))
+                (portRef I (instanceRef ledx_3_OBUF))
+                (portRef I (instanceRef ledx_0_OBUF))
+                (portRef I (instanceRef spi_miso_OBUFT))
+                (portRef I (instanceRef avr_rx_OBUFT))
+              )
+            )
+            (net spi_miso
+              (joined
+                (portRef spi_miso)
+                (portRef O (instanceRef spi_miso_OBUFT))
+              )
+            )
+            (net (rename spi_channel_3_ "spi_channel<3>")
+              (joined
+                (portRef (member spi_channel 0))
+                (portRef O (instanceRef spi_channel_3_OBUFT_renamed_1))
+              )
+            )
+            (net (rename spi_channel_2_ "spi_channel<2>")
+              (joined
+                (portRef (member spi_channel 1))
+                (portRef O (instanceRef spi_channel_2_OBUFT))
+              )
+            )
+            (net (rename spi_channel_1_ "spi_channel<1>")
+              (joined
+                (portRef (member spi_channel 2))
+                (portRef O (instanceRef spi_channel_1_OBUFT))
+              )
+            )
+            (net (rename spi_channel_0_ "spi_channel<0>")
+              (joined
+                (portRef (member spi_channel 3))
+                (portRef O (instanceRef spi_channel_0_OBUFT))
+              )
+            )
+            (net avr_rx
+              (joined
+                (portRef avr_rx)
+                (portRef O (instanceRef avr_rx_OBUFT))
+              )
+            )
+            (net M_ledM_digit_inv
+              (joined
+                (portRef P (instanceRef XST_VCC))
+                (portRef T (instanceRef spi_channel_3_OBUFT_renamed_1))
+                (portRef T (instanceRef spi_channel_2_OBUFT))
+                (portRef T (instanceRef spi_channel_1_OBUFT))
+                (portRef T (instanceRef spi_channel_0_OBUFT))
+                (portRef T (instanceRef spi_miso_OBUFT))
+                (portRef T (instanceRef avr_rx_OBUFT))
+              )
+            )
+            (net clk
+              (joined
+                (portRef clk)
+                (portRef I (instanceRef clk_BUFGP_renamed_14))
+              )
+            )
+            (net rst_n
+              (joined
+                (portRef rst_n)
+                (portRef I (instanceRef rst_n_IBUF_renamed_0))
+              )
+            )
+            (net (rename ledx_7_ "ledx<7>")
+              (joined
+                (portRef (member ledx 0))
+                (portRef O (instanceRef ledx_7_OBUF_renamed_2))
+              )
+            )
+            (net (rename ledx_6_ "ledx<6>")
+              (joined
+                (portRef (member ledx 1))
+                (portRef O (instanceRef ledx_6_OBUF_renamed_3))
+              )
+            )
+            (net (rename ledx_5_ "ledx<5>")
+              (joined
+                (portRef (member ledx 2))
+                (portRef O (instanceRef ledx_5_OBUF_renamed_4))
+              )
+            )
+            (net (rename ledx_4_ "ledx<4>")
+              (joined
+                (portRef (member ledx 3))
+                (portRef O (instanceRef ledx_4_OBUF_renamed_5))
+              )
+            )
+            (net (rename ledx_3_ "ledx<3>")
+              (joined
+                (portRef (member ledx 4))
+                (portRef O (instanceRef ledx_3_OBUF))
+              )
+            )
+            (net (rename ledx_2_ "ledx<2>")
+              (joined
+                (portRef (member ledx 5))
+                (portRef O (instanceRef ledx_2_OBUF_renamed_6))
+              )
+            )
+            (net (rename ledx_1_ "ledx<1>")
+              (joined
+                (portRef (member ledx 6))
+                (portRef O (instanceRef ledx_1_OBUF_renamed_7))
+              )
+            )
+            (net (rename ledx_0_ "ledx<0>")
+              (joined
+                (portRef (member ledx 7))
+                (portRef O (instanceRef ledx_0_OBUF))
+              )
+            )
+            (net (rename ledy_7_ "ledy<7>")
+              (joined
+                (portRef (member ledy 0))
+                (portRef O (instanceRef ledy_7_OBUF_renamed_8))
+              )
+            )
+            (net (rename ledy_6_ "ledy<6>")
+              (joined
+                (portRef (member ledy 1))
+                (portRef O (instanceRef ledy_6_OBUF_renamed_9))
+              )
+            )
+            (net (rename ledy_5_ "ledy<5>")
+              (joined
+                (portRef (member ledy 2))
+                (portRef O (instanceRef ledy_5_OBUF_renamed_10))
+              )
+            )
+            (net (rename ledy_4_ "ledy<4>")
+              (joined
+                (portRef (member ledy 3))
+                (portRef O (instanceRef ledy_4_OBUF))
+              )
+            )
+            (net (rename ledy_3_ "ledy<3>")
+              (joined
+                (portRef (member ledy 4))
+                (portRef O (instanceRef ledy_3_OBUF_renamed_11))
+              )
+            )
+            (net (rename ledy_2_ "ledy<2>")
+              (joined
+                (portRef (member ledy 5))
+                (portRef O (instanceRef ledy_2_OBUF_renamed_12))
+              )
+            )
+            (net (rename ledy_1_ "ledy<1>")
+              (joined
+                (portRef (member ledy 6))
+                (portRef O (instanceRef ledy_1_OBUF))
+              )
+            )
+            (net (rename ledy_0_ "ledy<0>")
+              (joined
+                (portRef (member ledy 7))
+                (portRef O (instanceRef ledy_0_OBUF_renamed_13))
+              )
+            )
+          )
+      )
+    )
+  )
+
+  (design mojo_top_0
+    (cellRef mojo_top_0
+      (libraryRef mojo_top_0_lib)
+    )
+    (property PART (string "xc6slx9tqg144-2") (owner "Xilinx"))
+  )
+)
+

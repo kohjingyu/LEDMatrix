@@ -1,0 +1,62 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Nov 22 19:02:25 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "io_dip(17)" LOCATE = SITE "P78" LEVEL 1;
+COMP "io_dip(18)" LOCATE = SITE "P75" LEVEL 1;
+COMP "io_dip(19)" LOCATE = SITE "P74" LEVEL 1;
+COMP "spi_sck" LOCATE = SITE "P43" LEVEL 1;
+COMP "clk" LOCATE = SITE "P56" LEVEL 1;
+COMP "io_dip(0)" LOCATE = SITE "P120" LEVEL 1;
+COMP "avr_rx_busy" LOCATE = SITE "P39" LEVEL 1;
+COMP "io_dip(1)" LOCATE = SITE "P121" LEVEL 1;
+COMP "io_dip(2)" LOCATE = SITE "P118" LEVEL 1;
+COMP "io_dip(3)" LOCATE = SITE "P119" LEVEL 1;
+COMP "io_dip(4)" LOCATE = SITE "P116" LEVEL 1;
+COMP "io_dip(5)" LOCATE = SITE "P117" LEVEL 1;
+COMP "io_dip(6)" LOCATE = SITE "P114" LEVEL 1;
+COMP "ledx[0]" LOCATE = SITE "P51" LEVEL 1;
+COMP "io_dip(7)" LOCATE = SITE "P115" LEVEL 1;
+COMP "ledx[1]" LOCATE = SITE "P41" LEVEL 1;
+COMP "io_dip(8)" LOCATE = SITE "P112" LEVEL 1;
+COMP "ledx[2]" LOCATE = SITE "P35" LEVEL 1;
+COMP "io_dip(9)" LOCATE = SITE "P111" LEVEL 1;
+COMP "ledx[3]" LOCATE = SITE "P33" LEVEL 1;
+COMP "ledy[0]" LOCATE = SITE "P50" LEVEL 1;
+COMP "ledx[4]" LOCATE = SITE "P30" LEVEL 1;
+COMP "ledy[1]" LOCATE = SITE "P40" LEVEL 1;
+COMP "ledx[5]" LOCATE = SITE "P27" LEVEL 1;
+COMP "spi_mosi" LOCATE = SITE "P44" LEVEL 1;
+COMP "ledy[2]" LOCATE = SITE "P34" LEVEL 1;
+COMP "ledx[6]" LOCATE = SITE "P24" LEVEL 1;
+COMP "ledy[3]" LOCATE = SITE "P32" LEVEL 1;
+COMP "ledx[7]" LOCATE = SITE "P22" LEVEL 1;
+COMP "ledy[4]" LOCATE = SITE "P29" LEVEL 1;
+COMP "ledy[5]" LOCATE = SITE "P26" LEVEL 1;
+COMP "ledy[6]" LOCATE = SITE "P23" LEVEL 1;
+COMP "ledy[7]" LOCATE = SITE "P21" LEVEL 1;
+COMP "spi_ss" LOCATE = SITE "P48" LEVEL 1;
+COMP "avr_tx" LOCATE = SITE "P55" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "P38" LEVEL 1;
+COMP "io_dip(10)" LOCATE = SITE "P105" LEVEL 1;
+COMP "io_dip(11)" LOCATE = SITE "P104" LEVEL 1;
+COMP "io_dip(12)" LOCATE = SITE "P102" LEVEL 1;
+COMP "io_dip(20)" LOCATE = SITE "P67" LEVEL 1;
+COMP "io_dip(13)" LOCATE = SITE "P101" LEVEL 1;
+COMP "io_dip(21)" LOCATE = SITE "P66" LEVEL 1;
+COMP "io_dip(14)" LOCATE = SITE "P100" LEVEL 1;
+COMP "io_dip(22)" LOCATE = SITE "P58" LEVEL 1;
+COMP "cclk" LOCATE = SITE "P70" LEVEL 1;
+COMP "io_dip(15)" LOCATE = SITE "P99" LEVEL 1;
+COMP "io_dip(23)" LOCATE = SITE "P57" LEVEL 1;
+COMP "io_dip(16)" LOCATE = SITE "P79" LEVEL 1;
+TIMEGRP clk = BEL "ledM/M_matrix_counter_q_4" BEL "ledM/M_matrix_counter_q_3"
+        BEL "ledM/M_matrix_counter_q_2" BEL "ledM/M_matrix_counter_q_1" BEL
+        "ledM/M_matrix_counter_q_0" BEL "clk_BUFGP/BUFG" BEL
+        "reset_cond/M_stage_q_3" BEL "reset_cond/M_stage_q_2" BEL
+        "reset_cond/M_stage_q_1" BEL "reset_cond/M_stage_q_0";
+TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

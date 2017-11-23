@@ -1,0 +1,31 @@
+module equationModule (
+    input clk,  // clock
+    input rst,  // reset
+    output ledx[3][8],
+    output ledy[3][8]
+  ) {
+
+  ledMatrix m1;
+  ledMatrix m2;
+  ledMatrix m3;
+  ledMatrix m4;
+
+    always {
+    m1.clk = clk;
+    m1.rst = rst;
+    m2.clk = clk;
+    m2.rst = rst;
+    m3.clk = clk;
+    m3.rst = rst;
+    m4.clk = clk;
+    m4.rst = rst;
+    
+    m1.digit = 0;
+    m2.digit = 1;
+    m3.digit = 2;
+    m4.digit = 3;
+    
+    ledx[0] = m1.ledx;
+    ledy[0] = m1.ledy;
+  }
+}
